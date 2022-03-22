@@ -27,7 +27,6 @@ public class MyTask
                 for(int i: arr)
                     if(String.format("%32s", Integer.toBinaryString(i)).replace(' ', '0').charAt(numOfBit)=='1')
                     {
-                        System.out.println("Code of number: "+String.format("%32s", Integer.toBinaryString(i)).replace(' ', '0')+"----"+y);
                         y^=i;
                     }
                 if(y==0)
@@ -35,15 +34,12 @@ public class MyTask
                     numOfBit--;
                     continue;
                 }
-//                System.out.println(numOfBit);
-                System.out.println(x+" "+y+"  111111");
                 if(x==y)
                 {
                     numOfBit--;
                 }
                 else
                 {
-//                    numOfBit++;
                     if(uniqueNums==2)
                     {
                         x^=y;
@@ -67,14 +63,12 @@ public class MyTask
                 for(int i: sumOfFind)
                     if(String.format("%32s", Integer.toBinaryString(i)).replace(' ', '0').charAt(numOfBit)=='0')
                     {
-//                        System.out.println(i);
                         y^=i;
                     }
 
                 for(int i: arr)
                     if(String.format("%32s", Integer.toBinaryString(i)).replace(' ', '0').charAt(numOfBit)=='0')
                     {
-                        System.out.println("Code of number: "+String.format("%32s", Integer.toBinaryString(i)).replace(' ', '0')+"----"+y);
                         y^=i;
                     }
                 if(y==0)
@@ -82,12 +76,8 @@ public class MyTask
                     numOfBit--;
                     continue;
                 }
-//                System.out.println("y");
-                System.out.println(x+" "+y+"  000000");
-//                System.out.println(sumOfFind);
                 if(x!=y)
                 {
-//                    numOfBit++;
                     if(uniqueNums==2)
                     {
                         x^=y;
