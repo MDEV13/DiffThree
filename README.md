@@ -39,11 +39,11 @@ Consider a couple of cases:
     
 In the undercase of finding **the one of unique value**, this value  will be ***y***. The undercase we get the XOR 2 unique values is impossible.
 
-1 0 0 - (1)
-0 1 1 - (2)
-    or
-7 8 2 - (1)
-2 7 1 - (2)
+1 0 0 - (1)</br>
+0 1 1 - (2)</br>
+    or</br>
+7 8 2 - (1)</br>
+2 7 1 - (2)</br>
 
 At the top we see values which means i-th bit of three unique values,so how exactly we can prove that the undercase related to XOR 2 values obviuosly is impractical?
 Here is how, noticed in the table above, let's work out XOR 
@@ -56,11 +56,11 @@ After **y** is found we need to do XOR between **y** and **x** in order to throw
     
 Right now to be discussed finding one and remaining values, but also it is possible to appear next cases:
 
-1 1 1 - (1)
-0 0 0 - (2)
-or
-7 1 3 - (1)
-4 2 8 - (2)
+1 1 1 - (1)</br>
+0 0 0 - (2)</br>
+  or</br>
+7 1 3 - (1)</br>
+4 2 8 - (2)</br>
     
 For remaining undercase we need some kind of condition that said us about what unique one is impossible to find. For sovling this problem we can change i-th bit and do so before we have possibility to choose ONE of them.
 Let's disassemble case (1) having worked out **x** = 101<sub>2</sub>=5<sub>2</sub>. In this case we get **y** eqaul to **x** whereas if we take for the start (i-th) bit - last index. If you're not understanding now, consider a couple of examples everything's going to be clear.
